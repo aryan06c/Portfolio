@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — AryanK</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="brand" href="index.html">Aryan Khilari</a>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html" class="active cta">Contact</a>
+            </nav>
+            <div class="controls">
+                <button id="theme-toggle" aria-label="Toggle theme">☀/🌙</button>
+                <button id="prefs-btn" aria-label="Open preferences">⚙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- The cube canvas/area sits behind the content -->
+    <div id="contact-canvas" class="contact-canvas" aria-hidden="true"></div>
+
+    <main>
+        <section class="container content contact-section">
+            <h2>Contact Me</h2>
+
+            <form id="contact-form" class="glass contact-form">
+                <div class="row">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <input type="email" id="email" placeholder="Your Email" required />
+                </div>
+                <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+                <div class="row split">
+                    <button type="submit" class="btn">Send Message</button>
+                    <div class="hint muted">Or email me at <a href="khialriaryan45@gmail.com">khialriaryan45@gmail.com</a></div>
+                </div>
+            </form>
+
+            <aside class="glass contact-info">
+                <h3>Other ways to reach</h3>
+                <p class="muted">Open to mentorship, internships, and collaborations.</p>
+                <ul>
+                    <li>LinkedIn: <a href="#">/aryankhilari</a></li>
+                    <li>GitHub: <a href="#">/aryan06</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="btn ghost">Back Home</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // The contact page asks for 3 moving cubes
+        window.appInit && window.appInit({
+            page: 'contact',
+            contactCubes: 3
+        });
+    </script>
+</body>
+
+</html>

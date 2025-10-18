@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Skills — AryanK</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="brand" href="index.html">Aryan Khilari</a>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="skills.html" class="active">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html" class="cta">Contact</a>
+            </nav>
+            <div class="controls">
+                <button id="theme-toggle" aria-label="Toggle theme">☀/🌙</button>
+                <button id="prefs-btn" aria-label="Open preferences">⚙</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="container content">
+            <h2>Skills & Tools</h2>
+
+            <div class="grid cards">
+                <div class="skill-card glass">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML & CSS</li>
+                        <li>React</li>
+                        <li>Animations & Canvas</li>
+                    </ul>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Backend & DB</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>SQL / NoSQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card glass">
+                    <h3>AI & ML</h3>
+                    <ul>
+                        <li>Scikit-learn</li>
+                        <li>TensorFlow / PyTorch (basic)</li>
+                        <li>Data preprocessing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="skill-chart glass">
+                <h3>Comfort Levels</h3>
+                <div class="bars">
+                    <div class="bar"><span>JavaScript</span>
+                        <div class="fill" style="--pct:90%"></div>
+                    </div>
+                    <div class="bar"><span>Python</span>
+                        <div class="fill" style="--pct:85%"></div>
+                    </div>
+                    <div class="bar"><span>React</span>
+                        <div class="fill" style="--pct:80%"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div id="float-area" aria-hidden="true"></div>
+
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="btn ghost">Back Home</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.appInit && window.appInit({
+            page: 'skills'
+        });
+    </script>
+</body>
+
+</html>

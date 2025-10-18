@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — AryanK</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="brand" href="index.html">Aryan Khilari</a>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html" class="cta">Contact</a>
+            </nav>
+            <div class="controls">
+                <button id="theme-toggle" aria-label="Toggle theme">☀/🌙</button>
+                <button id="prefs-btn" aria-label="Open preferences">⚙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container content">
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+                <article class="project-card glass">
+                    <h3>Interactive Portfolio</h3>
+                    <p>Responsive website with animated cubes and path-based movement. Built with vanilla JS, CSS animations.</p>
+                    <a href="#" class="btn ghost">View repo</a>
+                </article>
+
+                <article class="project-card glass">
+                    <h3>Chatbot — NLP</h3>
+                    <p>Intent detection, slot-filling, and a simple web interface for user messages.</p>
+                    <a href="#" class="btn ghost">View repo</a>
+                </article>
+
+                <article class="project-card glass">
+                    <h3>Library Management</h3>
+                    <p>Java-based system with JDBC and UI for managing library operations.</p>
+                    <a href="#" class="btn ghost">View repo</a>
+                </article>
+            </div>
+        </section>
+        <div id="float-area" aria-hidden="true"></div>
+
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="btn ghost">Back Home</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.appInit && window.appInit({
+            page: 'projects'
+        });
+    </script>
+</body>
+
+</html>
